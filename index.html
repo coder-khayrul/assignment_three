@@ -50,9 +50,12 @@
                         </ul>
                     </div>
                     <ul class="hidden md:flex items-center gap-[30px]">
-                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Product</a></li>
-                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Service</a></li>
-                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Contact</a></li>
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700"
+                                href="#">Product</a></li>
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700"
+                                href="#">Service</a></li>
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700"
+                                href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions hidden md:flex items-center gap-[25px] text-[15px]">
@@ -64,18 +67,211 @@
                     </button>
                     <button
                         class="bg-transparent border border-[#179800] text-black py-[8px] px-[20px] rounded-md hover:bg-[#179800] duration-700 hover:text-white">Login</button>
-                    <button class="bg-[#179800] py-[8px] px-[20px] text-white border rounded-md hover:bg-white duration-700 hover:border-[#179800] hover:text-[#179800]">Register</button>
+                    <button
+                        class="bg-[#179800] py-[8px] px-[20px] text-white border rounded-md hover:bg-white duration-700 hover:border-[#179800] hover:text-[#179800]">Register</button>
                 </div>
             </div>
         </div>
     </header>
     <!--header end here-->
     <main>
-        <!--section start here-->
-        <section>
-
+        <!--hero section start here-->
+        <section class="bg-gradient-to-b from-[#fff] to-[#EFEBE3] pt-[60px]">
+            <div class="container max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
+                <div class="hero-wrapper min-h-screen flex flex-col items-center jusitfy-center">
+                    <div class="hero-content flex items-center jusitfy-center flex-col gap-[30px] mb-[30px]">
+                        <h2 class="text-[45px] font-bold text-center">Freshness <span class="text-[#179800]">You Can<br>
+                                Count</span> On, Prices You’ll Love!</h2>
+                        <p class="text-[15px] font-regular text-center max-w-[70%]">Shop your daily essentials at
+                            unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                        </p>
+                    </div>
+                    <div class="hero-img flex jusitfy-center">
+                        <img class="w-[70%] mx-auto" src="assets/image/hero-vegetables.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--section end here-->
+        <!--hero section end here-->
+        <!--service section start here-->
+        <section class="service-section py-[100px]">
+            <div class="container max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
+                <h2 class="section-title text-[#179800] text-[30px] font-semibold mb-[60px]">Services</h2>
+                <div class="service-box-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] ">
+                    <div class="service-card bg-[#EFEBE3] rounded-[14px] px-[20px] py-[40px] flex flex-col items-center jusitfy-center">
+                        <div class="service-card__image w-[125px] h-[125px] rounded-full grid place-items-center bg-white p-[15px] mb-[20px]">
+                            <img src="assets/image/service.png" alt="Support">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="text-center font-semibold text-[20px] mb-[15px]">24/7 Services </h3>
+                            <p class="text-[15px] text-center text-[#777]">We are always available to assist you, anytime and anywhere.
+                                Our dedicated team ensures round-the-clock support for your needs.
+                                Experience seamless service, 24 hours a day, 7 days a week!</p>
+                        </div>
+                    </div>
+                    <div class="service-card bg-[#EFEBE3] rounded-[14px] px-[20px] py-[40px] flex flex-col items-center jusitfy-center">
+                        <div class="service-card__image w-[125px] h-[125px] rounded-full bg-white p-[15px] mb-[20px]">
+                            <img src="assets/image/delivery.png" alt="Support">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="text-center font-semibold text-[20px] mb-[15px]">Fast Delivery</h3>
+                            <p class="text-[15px] text-center text-[#777]">Get your orders delivered swiftly with our efficient service.
+                                We prioritize speed without compromising quality.
+                                Experience hassle-free, on-time delivery every time</p>
+                        </div>
+                    </div>
+                    <div class="service-card bg-[#EFEBE3] rounded-[14px] px-[20px] py-[40px] flex flex-col items-center jusitfy-center">
+                        <div class="service-card__image w-[125px] h-[125px] rounded-full bg-white p-[15px] mb-[20px]">
+                            <img src="assets/image/healthy.png" alt="Support">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="text-center font-semibold text-[20px] mb-[15px]">Healthy Products</h3>
+                            <p class="text-[15px] text-center text-[#777]">We offer high-quality, nutritious products for a better lifestyle.
+                                Carefully selected ingredients ensure your well-being.
+                                Choose health, choose freshness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--service section end here-->
+        <!--product section end here-->
+        <section class="product-section py-[100px] bg-[#EFEBE3]">
+            <div class="container max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
+                <h2 class="section-title text-[#179800] text-[30px] font-semibold mb-[60px]">Popular Products</h2>
+                <div class="product-wrapper">
+                    <div class="product-cards flex flex-col md:flex-row gap-[20px]">
+                        <div class="product-card__ad w-full md:w-1/3 bg-gradient-to-br from-[#56DC3E] to-[#EFEBE3] p-[30px] rounded-lg relative ">
+                            <h3 class="text-[24px] text-white font-semibold mb-[15px]">30% Off</h3>
+                            <p class="text-[14px] font-regular mb-[15px] relative z-[99] w-2/3 md:w-full">Grab your favorite products at a 30% discount for a limited time!
+                                Don’t miss out—shop now and save big!</p>
+                            <button class="bg-white text-black font-semibold px-[30px] py-[8px] rounded-md">Buy Now</button>
+                            <img class="absolute bottom-0 right-0 w-[220px]" src="assets/image/vegetable-offer.png" alt="vegetable">
+                        </div>
+                        <div class="products-card-container grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] 2xl:grid-cols-3 gap-[20px] w-full md:w-2/3">
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/onion.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Onion 1Kg</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/tomato.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Tomato 50g</h3>
+                                    <span class="text-[14px] font-medium">$22.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/potato.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Potato 1Kg</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/dawat-mock-up.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Milk .5L</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/onion.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Onion 1Kg</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/tomato.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Tomato 50g</h3>
+                                    <span class="text-[14px] font-medium">$22.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/potato.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Potato 1Kg</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/dawat-mock-up.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Milk .5L</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                            <div class="mini-product flex items-center gap-[15px] p-[10px] bg-white rounded-lg">
+                                <div class="mini-product__img p-[10px] w-[80px] h-[80px] rounded-lg bg-[#EFEBE3]">
+                                    <img src="assets/image/onion.png" alt="Product">
+                                </div>
+                                <div class="mini-product-content ">
+                                    <div class="product-rating flex items-center gap-[10px] text-[14px] font-regular mb-[5px]">
+                                        <i class="fa-solid fa-star text-[#FFC107] "></i>
+                                        <span>4.5</span>
+                                    </div>
+                                    <h3 class="text-[16px] font-medium mb-[5px]">Onion 1Kg</h3>
+                                    <span class="text-[14px] font-medium">$38.44</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--product section end here-->
     </main>
     <!--footer start here-->
     <footer>

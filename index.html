@@ -5,11 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment- 03</title>
+    <!--sora font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Daisy UI with Tailwind CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Sora", serif;
+        }
+    </style>
 </head>
+
 <body>
     <!--header start here-->
-    <header>
-
+    <header class="py-[15px]">
+        <div class="max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
+            <div class="header-wrapper flex items-center justify-between">
+                <div class="header-logo">
+                    <a href="#">
+                        <img class="w-[80%] md:w-[100%]" src="assets/image/logo-header.png" alt="Header Logo">
+                    </a>
+                </div>
+                <nav>
+                    <div class="dropdown dropdown-end md:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] me-[50px] mt-3 w-52 p-2 shadow">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <ul class="hidden md:flex items-center gap-[30px]">
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Product</a></li>
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Service</a></li>
+                        <li><a class="text-[15px] font-medium text-[#111] hover:text-[#179800] duration-700" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions hidden md:flex items-center gap-[25px] text-[15px]">
+                    <button class="text-[18px] hover:text-[#179800] duration-700">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="text-[18px] hover:text-[#179800] duration-700">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button
+                        class="bg-transparent border border-[#179800] text-black py-[8px] px-[20px] rounded-md hover:bg-[#179800] duration-700 hover:text-white">Login</button>
+                    <button class="bg-[#179800] py-[8px] px-[20px] text-white border rounded-md hover:bg-white duration-700 hover:border-[#179800] hover:text-[#179800]">Register</button>
+                </div>
+            </div>
+        </div>
     </header>
     <!--header end here-->
     <main>
@@ -24,6 +82,20 @@
 
     </footer>
     <!--footer end here-->
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'body-font': '"Sora", serif'
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

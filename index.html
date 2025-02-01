@@ -20,25 +20,68 @@
         * {
             font-family: "Sora", serif;
         }
-        #animation-area{
-            animation: up_down_anim 20s ease-in-out alternate infinite;
+        .animation-image{
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
-        @keyframes up_down_anim {
+        #anim-img1{
+            left: 10%;
+            top: 10%;
+            animation: up_down_anim1 5s ease-in-out alternate infinite;
+        }
+        #anim-img2{
+            left: 20%;
+            top: 20%;
+            animation: up_down_anim2 5s ease-in-out alternate infinite;
+        }
+        #anim-img3{
+            right: 10%;
+            top: 10%;
+            animation: up_down_anim2 5s ease-in-out alternate infinite;
+            left: auto;
+        }
+        #anim-img4{
+            right: 20%;
+            top: 20%;
+            animation: up_down_anim1 5s ease-in-out alternate infinite;
+            left: auto;
+        }
+        @keyframes up_down_anim1 {
             0%{
-                transform: translate(0,0);
-            }
-            25%{
-                transform: translate(-50px, -100px);
-            }
-            50%{
-                transform: translate(0px, -200px);
-            }
-            75%{
-                transform: translate(50px, -100px);
+                transform: translate(0,0px);
             }
             100%{
-                transform: translate(0px, 0px);
+                transform: translate(50px,-50px);
             }
+        }
+        @keyframes up_down_anim2 {
+            0%{
+                transform: translate(0,0px);
+            }
+            100%{
+                transform: translate(-50px,-50px);
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            #anim-img1{
+            left: 10%;
+            top: 20%;
+        }
+        #anim-img2{
+            left: 20%;
+            top: 40%;
+        }
+        #anim-img3{
+            right: 10%;
+            top: 20%;
+        }
+        #anim-img4{
+            right: 20%;
+            top: 40%;
+        }
         }
     </style>
 </head>
@@ -96,18 +139,23 @@
     <!--header end here-->
     <main>
         <!--hero section start here-->
-        <section class="bg-gradient-to-b from-[#fff] to-[#EFEBE3] pt-[60px]">
+        <section class="bg-gradient-to-b from-[#fff] to-[#EFEBE3] pt-[60px] relative">
+            <!--animation images-->
+            <img class="animation-image"  id="anim-img1" src="assets/image/anim-1.png" alt="">
+            <img class="animation-image" id="anim-img2" src="assets/image/anim-2.png" alt="">
+            <img class="animation-image" id="anim-img3" src="assets/image/anim-3.png" alt="">
+            <img class="animation-image" id="anim-img4" src="assets/image/anim-4.png" alt="">
             <div class="container max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
                 <div class="hero-wrapper min-h-screen flex flex-col items-center jusitfy-center">
                     <div class="hero-content z-[99] flex items-center jusitfy-center flex-col gap-[30px] mb-[30px]">
-                        <h2 class="text-[45px] font-bold text-center">Freshness <span class="text-[#179800]">You Can<br>
+                        <h2 class="text-[33px] sm:text-[45px] font-bold text-center">Freshness <span class="text-[#179800]">You Can<br>
                                 Count</span> On, Prices You’ll Love!</h2>
-                        <p class="text-[15px] font-regular text-center max-w-[70%]">Shop your daily essentials at
+                        <p class="text-[14px] sm:text-[15px] font-regular text-center max-w-[95%] md:max-w-[70%]">Shop your daily essentials at
                             unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
                         </p>
                     </div>
                     <div class="hero-img flex jusitfy-center">
-                        <img class="w-[70%] mx-auto" id="animation-area" src="assets/image/hero-vegetables.png" alt="">
+                        <img class="w-full md:w-[70%] mx-auto" src="assets/image/hero-vegetables.png" alt="">
                     </div>
                 </div>
             </div>

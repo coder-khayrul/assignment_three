@@ -20,6 +20,26 @@
         * {
             font-family: "Sora", serif;
         }
+        #animation-area{
+            animation: up_down_anim 20s ease-in-out alternate infinite;
+        }
+        @keyframes up_down_anim {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(-50px, -100px);
+            }
+            50%{
+                transform: translate(0px, -200px);
+            }
+            75%{
+                transform: translate(50px, -100px);
+            }
+            100%{
+                transform: translate(0px, 0px);
+            }
+        }
     </style>
 </head>
 
@@ -79,7 +99,7 @@
         <section class="bg-gradient-to-b from-[#fff] to-[#EFEBE3] pt-[60px]">
             <div class="container max-w-[95%] lg:max-w-[85%] 2xl:max-w-[1366px] mx-auto">
                 <div class="hero-wrapper min-h-screen flex flex-col items-center jusitfy-center">
-                    <div class="hero-content flex items-center jusitfy-center flex-col gap-[30px] mb-[30px]">
+                    <div class="hero-content z-[99] flex items-center jusitfy-center flex-col gap-[30px] mb-[30px]">
                         <h2 class="text-[45px] font-bold text-center">Freshness <span class="text-[#179800]">You Can<br>
                                 Count</span> On, Prices You’ll Love!</h2>
                         <p class="text-[15px] font-regular text-center max-w-[70%]">Shop your daily essentials at
@@ -87,7 +107,7 @@
                         </p>
                     </div>
                     <div class="hero-img flex jusitfy-center">
-                        <img class="w-[70%] mx-auto" src="assets/image/hero-vegetables.png" alt="">
+                        <img class="w-[70%] mx-auto" id="animation-area" src="assets/image/hero-vegetables.png" alt="">
                     </div>
                 </div>
             </div>
